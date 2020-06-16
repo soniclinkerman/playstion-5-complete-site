@@ -24,6 +24,7 @@ nav ul{
 body{
     font-family: 'Lato', sans-serif;
     letter-spacing: 1px;
+    line-height: 1.5em;
 }
 
 .logo img{
@@ -164,14 +165,14 @@ nav ul{
 
 @media(min-width:700px){
     .primary-video{
-        width:90%;
+        width:93%;
         height: 500px;
     }
 
     .grid-container{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        margin: 2em;
+        column-gap: 1em;
     }
 }
 
@@ -204,5 +205,56 @@ nav ul{
 @media(min-width: 900px){
     .notable{
         grid-template-columns: auto auto auto;
+        justify-items: left;
     }
 }
+
+.limits{
+    display: block;
+    padding: 2em;
+}
+
+.limits-title{
+    font-size: 3rem;
+    font-weight: 100;
+    
+}
+
+.limits-video{
+    margin-bottom: 5em;
+    width: 100%;
+    margin: auto;
+    height: 400px;
+}
+
+.limits-info{
+    margin-bottom: 5em;
+}
+
+
+
+/* Limits */
+@media(min-width: 900px){
+    .limits{
+        display: grid;
+        grid-template-columns: 100px 100px 100px 500px;
+        grid-gap: 1em;
+        justify-content: center;
+    }
+    
+    .limits-title{
+        grid-column: 1/-1;
+    }
+    
+    .limits-info{
+        grid-column: 1/-1;
+    }
+    
+    .limits-video{
+        grid-column: 1/ -1;
+    }
+
+
+}
+
+
