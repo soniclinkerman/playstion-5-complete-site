@@ -240,7 +240,7 @@ nav ul{
 .simple{
     display: block;
     padding: 2em;
-    background: #EEEEEE;
+ 
 }
 
 .simple-title{
@@ -260,6 +260,7 @@ nav ul{
     margin-bottom: 5em;
     line-height: 3em;
 }
+
 
 
 
@@ -287,4 +288,96 @@ nav ul{
 
 }
 
+
+
+/* Newsletter */
+
+.newsletter{
+    margin-top: 5em;
+    background: #EEEEEE;
+    padding: 4em 0;
+}
+
+.newsletter-top{
+    margin-bottom: 2em;
+}
+
+.newsletter-title{
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+.newsletter-info{
+    width: 70%;
+    margin: auto;
+}
+
+input{
+    width: 90%;
+    padding: 0.5em;
+}
+
+.date-info{
+    margin: 4em 0;
+}
+
+.date-sec {
+    width: 80%;
+    margin: auto;
+}
+
+.date-text{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 2em;
+}
+
+.column{
+    margin: 1em 0;
+}
+
+form span {
+    color: #0043d4;
+    font-weight: bolder;
+}
+
+.confirm-text{
+    width: 75%;
+    margin: auto;
+}
+
+.confirm-btn{
+    margin-top: 2em;
+    width: 20%;
+    background: #0062d1;
+    color: #fff;
+    font-weight: bolder;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.confirm-btn:hover{
+    transform: scale(1.1);
+
+}
+
+
+@media(min-width: 900px){
+    .date-sec{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .column{
+        margin: 0 2em;
+    }
+
+    .form-main{
+        display: flex;
+        justify-content: space-evenly;
+        
+    }
+
+}
 

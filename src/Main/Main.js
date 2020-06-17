@@ -4,6 +4,7 @@ import Top from "../components/Top/Top";
 import Primary from "../components/Primary/primary";
 import Simple from "../components/Simple/simple";
 import Specs from "../components/Specs/specs";
+import Newsletter from "../components/Newsletter/newsletter";
 
 const Main = () => {
     return(
@@ -30,6 +31,8 @@ const Main = () => {
             all integrated into an iconic design.`}
             video={"https://www.youtube.com/embed/SebzB8W3bVU"}
             />
+
+            <Newsletter/>
            
 
         </div>
