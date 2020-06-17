@@ -13,6 +13,7 @@ const Main = () => {
             <Top/>
 
             <Simple
+            className="limits"
             title={"Play Has No Limits"}
             info={`Experience lightning fast loading with an ultra-high speed SSD, deeper immersion with support
             for haptic feedback, adaptive triggers and 3D Audio, and an all-new generation of incredible 
