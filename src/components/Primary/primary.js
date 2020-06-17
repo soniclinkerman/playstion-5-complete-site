@@ -6,7 +6,7 @@ const Primary = () => {
 
             <div className="primary-top">
                 <h2 className="primary-top-title">The games you want</h2>
-                <iframe title="primary" className="primary-video"  width="1000" height="560" src="https://www.youtube.com/embed/i76gPpka2Fo" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe title="primary" className="primary-video"  width="1000" height="560" src="https://www.youtube.com/embed/i76gPpka2Fo" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 
 
             </div>

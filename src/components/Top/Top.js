@@ -1,5 +1,4 @@
 import React from "react"
-import ps5 from "./images/ps5-digital-and-physical.jpeg"
 import "../styles.css"
 const Top = () => {
     return(
