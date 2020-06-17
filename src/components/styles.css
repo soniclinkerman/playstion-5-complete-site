@@ -1,3 +1,8 @@
+*{
+    box-sizing: border-box;
+    line-height: 1.5em;
+}
+
 /* header{
     display: flex;
 }
@@ -94,7 +99,6 @@ nav ul{
 
 .top{
     background: #E0E0EC;
-    margin-bottom: 2em;
     padding: 1.5em;
 }
 
@@ -123,6 +127,28 @@ nav ul{
     background: #383838;
 }
 
+/* Specs */
+
+.specs-detail{
+    width: 60%;
+    margin: auto;
+    margin-bottom: 4em;
+}
+
+.specs-title{
+    font-weight: 100;
+    font-size: 2rem;
+    margin-bottom: 0.5em;
+}
+
+.specs-info{
+    line-height: 3em;
+    font-size: 1.2rem;
+    opacity: 0.5;
+}
+
+
+
 
 /* Primary */
 
@@ -138,6 +164,7 @@ nav ul{
 .primary-top-title{
     font-size: 3em;
     font-weight: 100;
+    margin-bottom: 1.5em;
 }
 
 .primary-title{
@@ -150,6 +177,7 @@ nav ul{
     margin: 1em;
     margin-bottom: 3em;
     opacity: 0.4;
+    line-height: 2em;
 }
 
 .primary-img{
@@ -209,48 +237,50 @@ nav ul{
     }
 }
 
-.limits{
+.simple{
     display: block;
     padding: 2em;
+    background: #EEEEEE;
 }
 
-.limits-title{
+.simple-title{
     font-size: 3rem;
     font-weight: 100;
-    
+    margin-bottom: 0.5em;
 }
 
-.limits-video{
+.simple-video{
     margin-bottom: 5em;
     width: 100%;
     margin: auto;
     height: 400px;
 }
 
-.limits-info{
+.simple-info{
     margin-bottom: 5em;
+    line-height: 3em;
 }
 
 
 
-/* Limits */
+/* Simple */
 @media(min-width: 900px){
-    .limits{
+    .simple{
         display: grid;
         grid-template-columns: 100px 100px 100px 500px;
         grid-gap: 1em;
         justify-content: center;
     }
     
-    .limits-title{
+    .simple-title{
         grid-column: 1/-1;
     }
     
-    .limits-info{
+    .simple-info{
         grid-column: 1/-1;
     }
     
-    .limits-video{
+    .simple-video{
         grid-column: 1/ -1;
     }
 
