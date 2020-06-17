@@ -3,7 +3,7 @@ import React from "react"
 const Specs = () => {
     return(
         <div className="specs">
-            <img className= "specs-img" src="https://s7test3.scene7.com/is/image/SIEPDC/ps5-group-hardware-image-block-01-en-11jun20?$1600px$"/>
+            <img className= "specs-img" alt="specs" src="https://s7test3.scene7.com/is/image/SIEPDC/ps5-group-hardware-image-block-01-en-11jun20?$1600px$"/>
 
             <div className="specs-detail">
                 <h3 className="specs-title">Lightning speed </h3>
