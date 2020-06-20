@@ -3,29 +3,6 @@
     line-height: 1.5em;
 }
 
-/* header{
-    display: flex;
-}
-
-nav{
-    display: flex;
-    justify-content: space-between;
-}
-
-.logo{
-    max-width: 50px;
-}
-
-nav ul{
-    display: flex;
-    width: 300px;
-    justify-content: space-between;
-}
-
-.nav-item{
-    list-style: none;
-} */
-
 body{
     font-family: 'Lato', sans-serif;
     letter-spacing: 1px;
@@ -44,12 +21,58 @@ img{
 
 
 /* Naviagtion */
+
+.nav-list{
+    position: fixed;
+    background: #000;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 100%;
+    font-size: 2rem;
+    font-weight: bold;
+    width: 100%;
+    transform: translateX(-100%);
+}
+
+
+.navigation-open{
+    transform: translateX(-100%);
+}
+
+.close-nav{
+    border: none;
+    background: 0;
+    color: #FFE600;
+    font-weight: 700;
+    font-size: 3rem;
+    cursor: pointer;
+    padding: 0.5em;
+    text-align: left;
+    position: absolute;
+}
+
+.open-nav {
+    border: 0;
+    background: 0;
+    color: red;
+    cursor: pointer;
+    padding: .5em;
+    margin-right: auto;
+    position: absolute;
+    font-size: 2em;
+    top: -0.1em;
+    left: 1em;
+}
+
+
 nav ul{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin: 0;
     padding: 0;
+    
 }
 
 .nav-link{
@@ -58,7 +81,11 @@ nav ul{
     font-weight: bold;
     transition: 0.5s;
     padding: 0.5em 0;
-    background: #fafafa;
+   
+}
+
+.nav-link-hide{
+    display: none;
 }
 
 .nav-link:hover{
@@ -71,16 +98,13 @@ nav ul{
 } 
 
 .nav-top{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: block;
     padding: 1em;
 }
 
+
 .logo{
-    order:1;
-    position: relative;
-    left: 0.8em;
+    left: 0
 }
 
 .fa-search{
@@ -93,6 +117,56 @@ nav ul{
     color: #0070D1;
     text-decoration: none;
     font-size: 0.8rem;
+}
+
+.fa-search,.sign-in{
+    display: none;
+}
+
+@media(min-width:700px){
+    nav ul{
+        flex-direction: row;
+        justify-content: space-around;
+        display: flex;
+    }
+    .nav-link{
+        padding: 0.5em 3em;
+    }
+    .open-nav{
+        display: none;
+    }
+    .nav-link-hide{
+        display: flex;
+        text-decoration: none;
+        color: #252525;
+        font-weight: bold;
+        transition: 0.5s;
+        padding: 0.5em 2em; 
+    }
+
+    .nav-link-hide:hover{
+        color:white;
+        background: #252525;
+    }
+
+    .fa-search,.sign-in{
+        display: flex;
+    }
+
+    .logo{
+        order:1;
+        position: relative;
+        left: 0.8em;
+    }
+
+    .nav-top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    
+    
 }
 
 /* Top */
