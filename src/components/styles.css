@@ -108,7 +108,7 @@ nav ul{
 }
 
 .fa-search{
-    order0;
+    order:0;
 }
 
 .sign-in{
